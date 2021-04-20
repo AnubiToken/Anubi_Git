@@ -2,7 +2,7 @@
    AnubiToken
    Anubi, is the egyptian name of the god of death and the Underworld. In the Crypto space Anubi comes to protect its holders and to overtake its biggest competitors #DOGE #SHIBA
    
-   Forked from #SAFEMOON
+   Forked from #
 
    Two token features:
    5% fee auto add to the liquidity pool to locked forever when selling
@@ -709,15 +709,15 @@ contract AnubiCoin is Context, IERC20, Ownable {
     address[] private _excluded;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 100000000000 * 10**6 * 10**9;
+    uint256 private _tTotal = 1000000000 * 10**6 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
     string private _name = "AnubiCoin";
-    string private _symbol = "Anubi";
+    string private _symbol = "AnubiCoin";
     uint8 private _decimals = 9;
     
-    uint256 public _taxFee = 3;
+    uint256 public _taxFee = 5;
     uint256 private _previousTaxFee = _taxFee;
     
     uint256 public _liquidityFee = 5;
@@ -729,8 +729,8 @@ contract AnubiCoin is Context, IERC20, Ownable {
     bool inSwapAndLiquify;
     bool public swapAndLiquifyEnabled = true;
     
-    uint256 public _maxTxAmount = 500000000 * 10**6 * 10**9;
-    uint256 private numTokensSellToAddToLiquidity = 50000000 * 10**6 * 10**9;
+    uint256 public _maxTxAmount = 5000000 * 10**6 * 10**9;
+    uint256 private numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
     
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
