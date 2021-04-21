@@ -695,7 +695,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 }
 
 
-contract LaikaCoin is Context, IERC20, Ownable {
+contract AnubiCoin is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -713,8 +713,8 @@ contract LaikaCoin is Context, IERC20, Ownable {
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "LaikaCoin";
-    string private _symbol = "LAIKA";
+    string private _name = "AnubiCoin";
+    string private _symbol = "ANUBI";
     uint8 private _decimals = 9;
     
     uint256 public _taxFee = 3;
