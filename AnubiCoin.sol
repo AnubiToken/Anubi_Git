@@ -2,14 +2,14 @@
    AnubiToken
    Anubi, is the egyptian name of the god of death and the Underworld. In the Crypto space Anubi comes to protect its holders and to overtake its biggest competitors #DOGE #SHIBA
    
-   Forked from #
+   Forked from #LAIKACOIN
 
    Two token features:
    5% fee auto add to the liquidity pool to locked forever when selling
    3% fee auto distribute to all holders (Lower overall penality for buying / selling should resolve cross exchange pricing issues SAFEMOON has)
    50% burned at launch. With a strong burn and 5% LIQ fee, diamond hands will be rewarded.
 
-   - Liquidity pool tokens locked at launch (It's rug-proof)
+   - Liquidity pool tokens burned at launch (It's rug-proof)
    - Contract ownership renounced at launch (It's owned buy the community)
 
    Let's get this coin to 10,000x and Anubi will protect you and your beloved from the Underworld
@@ -695,7 +695,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 }
 
 
-contract AnubiCoin is Context, IERC20, Ownable {
+contract LaikaCoin is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -709,15 +709,15 @@ contract AnubiCoin is Context, IERC20, Ownable {
     address[] private _excluded;
    
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 1000000000 * 10**6 * 10**9;
+    uint256 private _tTotal = 100000000000 * 10**6 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
-    string private _name = "AnubiCoin";
-    string private _symbol = "AnubiCoin";
+    string private _name = "LaikaCoin";
+    string private _symbol = "LAIKA";
     uint8 private _decimals = 9;
     
-    uint256 public _taxFee = 5;
+    uint256 public _taxFee = 3;
     uint256 private _previousTaxFee = _taxFee;
     
     uint256 public _liquidityFee = 5;
@@ -729,8 +729,8 @@ contract AnubiCoin is Context, IERC20, Ownable {
     bool inSwapAndLiquify;
     bool public swapAndLiquifyEnabled = true;
     
-    uint256 public _maxTxAmount = 5000000 * 10**6 * 10**9;
-    uint256 private numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+    uint256 public _maxTxAmount = 500000000 * 10**6 * 10**9;
+    uint256 private numTokensSellToAddToLiquidity = 50000000 * 10**6 * 10**9;
     
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
