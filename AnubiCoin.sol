@@ -2,7 +2,7 @@
    AnubiToken
    Anubi, is the egyptian name of the god of death and the Underworld. In the Crypto space Anubi comes to protect its holders and to overtake its biggest competitors #DOGE #SHIBA
    
-   Forked from #LAIKACOIN
+   Forked from #SAFEMOON
 
    Two token features:
    5% fee auto add to the liquidity pool to locked forever when selling
